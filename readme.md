@@ -50,3 +50,33 @@ vi <filename> //we can put content inside files
 changes you made since last commit, you don't need it
 
 git restore <filename> //discard the changes you made
+
+# github : remote vcs
+
+to push local repo in github
+
+1. git remote add origin https://github.com/ProtoShiva/congenial-waffle.git
+
+origin is alias or nickname of our repo, so that instead of using the whole url we can use 'origin' as shortcut
+
+git remote
+git remote -v
+
+2. git branch -M main
+
+3. git push -u origin main
+
+# SSH
+
+secure shell: it helps in managing remote server and providing the ablility to safely connect and log and work from anywhere.
+it makes secure remote connection.
+problem with remote connection: vulnerable, hackers can sniff data
+data over the network should be encrypted for secure connection
+so ssh protocol provide robust encryption using cryptographic algos
+
+in github we can create SSH keys to make a secure connection
+
+for clone and pull in private repo we need authentication
+
+for pushing we need auth in both public and private
+auth can be https or ssh
