@@ -80,3 +80,34 @@ for clone and pull in private repo we need authentication
 
 for pushing we need auth in both public and private
 auth can be https or ssh
+
+# watch star
+
+watching: notified whenever changes made in your favourite repos
+star: bookmark fav repos
+
+# raw blame
+
+go to a repo , open a file, if you want to copy that file just use 'Raw' button
+
+'Blame': to tell you who made what changes in that code file
+
+'history': shows history of commits for that particular file in the project
+
+# issues
+
+they are like todo list for a project.
+you can label, assign someone, describe the issue by creating new issue
+
+# fork and pr
+
+fork means to work on a repo, just copy it into your account, do changes in any file and make a Pull request
+
+# clone
+
+if you want to work on a repo locally whereas in fork a copy is created on Github
+
+git clone https://github.com/rajaraodv/react-redux-blog.git
+
+now locally on vscode we can make changes and push code in remote repo.
+if author allows us to push we can push and create PRs
