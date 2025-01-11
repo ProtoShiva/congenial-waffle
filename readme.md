@@ -37,3 +37,16 @@ git show <tagname> //fetch all the details of the tagged commit
 git tag --delete <tagname>
 
 # unstaged file
+
+git restore --staged <filename>
+OR
+git reset HEAD <filename>
+
+# unmodifying files
+
+cat <filename> //to see content of files
+vi <filename> //we can put content inside files
+
+changes you made since last commit, you don't need it
+
+git restore <filename> //discard the changes you made
