@@ -12,4 +12,28 @@ git help //to find the various commands
 
 git rm <filename> //remove a file
 
+git rm -r <directory>
+
 git ls-files //see all the files in repo
+
+# Tagging
+
+tag diff points in history . eg tagging in commit history
+
+git tag <tagname>
+eg: git tag version1
+git tag v1.1
+
+git tag --list //show all the tags
+
+git tag -l <search query> //to find a particular tag
+eg: git tag -l "v1\*" //finds all tags containing v1
+
+git tag -a <tagname> -m "any messagge you want"
+eg: git tag -a v2.2 -m "this is version 2"
+
+git show <tagname> //fetch all the details of the tagged commit
+
+git tag --delete <tagname>
+
+# unstaged file
