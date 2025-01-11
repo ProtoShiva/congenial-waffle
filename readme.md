@@ -111,3 +111,15 @@ git clone https://github.com/rajaraodv/react-redux-blog.git
 
 now locally on vscode we can make changes and push code in remote repo.
 if author allows us to push we can push and create PRs
+
+# Branches
+
+we don't want to push changes on main or master branch.
+Use additional branches to do so. They are like version of your code.
+So the changes don't affect our main code.
+
+git branch <branchName> //the data of master branch is copied on this branch
+
+git branch //to display all the branches
+
+git checkout adding-feature // switch to this branch
