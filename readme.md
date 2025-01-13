@@ -137,5 +137,9 @@ git checkout adding-feature // switch to this branch
 
 4. staging
    so we have two files in staging area. one is completely new file that git wasn't tracking and other is file that is tracked by git but we made changes to it or modified the file.
+   This is how both files will look in staging area:
+   modified: file1.js
+   modified: readme.md
+   new file: style2.css
 
 5. committed
