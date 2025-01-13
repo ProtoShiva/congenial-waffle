@@ -124,6 +124,26 @@ git branch //to display all the branches
 
 git checkout adding-feature // switch to this branch
 
+git checkout -b feature // create and switch to new branch
+
+while branching out, make a map or diagram to visualize how and from where you want to create the new branch
+
+before changing branch you have to commit whatever changes you made on your current branch
+
+# Merging
+
+before merging go back go main branch, then merge the other branches to it
+git merge <branchname>
+
+fast-forward merge:
+
+git branch -d <branchname> //to delete a branch
+
+recursive merge:
+a new commit is made here and both branch are now connected to that commit
+
+git log -l // to see last commit made
+
 # Git stages
 
 1. untracked files: means you have not added them in staging area
@@ -143,3 +163,23 @@ git checkout adding-feature // switch to this branch
    new file: style2.css
 
 5. committed
+   when we commit we have branch name and checksum (SHA-1) and the message
+   [main aa79780] readme upated
+
+_we can skip stage area_
+git commit -a -m "new file added"
+you want to do it when you want to work fast
+
+# Merge conflicts
+
+Eg: one team mem decided to work on a diff branch say issue.
+made changes to a app.js file. commit it and your work done.
+
+another goes to the main branch and made changes again to that same file
+app.js and commit it
+
+now merge issue branch to master. what would happen?
+"a conflict will rise" which means git won't merge. we have to resolve it now
+you will get this (main|MERGING) in place of your branchname. Also if you open the
+app.js file you will get some other contents apart from your own.
+<<<<HEAD ====== >>>>>issue
