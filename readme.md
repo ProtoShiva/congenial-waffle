@@ -211,3 +211,10 @@ M means file modified
 **git log**
 
 git log -p //shows the diff made in each commit
+git log -p -3 // shows last 3 commit diff
+git log --stat //shows commit history but also summary what was added deleted
+
+**git aliases**
+git config --global alias.<newcommandname> <realcommand>
+
+eg: git config --global alias.unstage 'reset HEAD --'
