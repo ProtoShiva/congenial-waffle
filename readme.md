@@ -183,3 +183,31 @@ now merge issue branch to master. what would happen?
 you will get this (main|MERGING) in place of your branchname. Also if you open the
 app.js file you will get some other contents apart from your own.
 <<<<HEAD ====== >>>>>issue
+
+merge conflict can happen:
+when you haven't commit changes in one branch and try to merge
+when you commit diff changes to same file(this conflict happens during merging)
+
+first use git status to check the problem
+======= is center of conflict
+<<<<HEAD
+print("it is rainy day")
+=======
+print("it is sunny day")
+
+> > > > > issue
+
+so b/w head which is main branch and issue branch the whole conflict listed
+now go to the file make changes (either delete one line or keep both lines)
+and add to staging area and commit . voila your conflict is resolved
+
+**git status**
+
+we can use git status --short // to give use short summary
+here you have to know certain symbols to see what's going on
+?? means files are not tracked
+M means file modified
+
+**git log**
+
+git log -p //shows the diff made in each commit
