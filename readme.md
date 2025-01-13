@@ -123,3 +123,19 @@ git branch <branchName> //the data of master branch is copied on this branch
 git branch //to display all the branches
 
 git checkout adding-feature // switch to this branch
+
+# Git stages
+
+1. untracked files: means you have not added them in staging area
+
+2. Tracked by git (not changed)
+   when you create a new file. they are listed under untracked files (when you type git status) and will ask to use git add <filename> to track file
+
+3. Tracked by git (changed)
+   when you make changes to your already tracked files, they are modified and changes are not tracked by git. to do so
+   use git add <filename>
+
+4. staging
+   so we have two files in staging area. one is completely new file that git wasn't tracking and other is file that is tracked by git but we made changes to it or modified the file.
+
+5. committed
